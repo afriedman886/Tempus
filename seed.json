@@ -1,5 +1,5 @@
 {
 	"undefined": "./data/db",
-	"dev": "localhost/DEV_DB_NAME",
-	"prod": "localhost/PROD_DB_NAME"
+	"dev": "./data/DEV_db",
+	"prod": "./data/PROD_db"
 }
