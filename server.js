@@ -1,21 +1,14 @@
-// var http = require('http');
-var port = 1337;
-var express = require('./app/config/express');
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+var config = require('./app/config/config'),
+var mongoose = require('./app/config/mongoose'),
+var express = require('./app/config/express'),
+
+var db = mongoose(),
 var app = express();
 
-// http.createServer(function(req, res) {
-//   res.writeHead(200, {
-//     'Content-Type': 'text/plain'
-//   });
+app.listen(config.port);
 
-//   res.end("Hello Amy, you've stumbled on the simplest web server ever.");
-
-// }).listen(port);
-
-// console.log('Our awesome web server running at http://localhost:' + port);
-
-
-app.listen(port);
 module.exports = app;
+console.log(process.env.NODE_ENV  + ' server running at http://localhost:' + config.port);
 
-console.log('Server running at http://localhost:' + port);
