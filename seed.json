@@ -1,5 +1,5 @@
 {
 	"undefined": "localhost/patients",
-	"dev": "localhost/patients_DEV",
+	"development": "localhost/patients",
 	"prod": "localhost/patients_PROD"
 }
