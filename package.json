@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/afriedman886/Challenge/issues"
   },
-  "homepage": "https://github.com/afriedman886/Challenge#readme"
+  "homepage": "https://github.com/afriedman886/Challenge#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
