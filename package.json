@@ -1,0 +1,19 @@
+{
+  "name": "tempus",
+  "version": "1.0.0",
+  "description": "Doctor/patient portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afriedman886/Challenge.git"
+  },
+  "author": "Amy Friedman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afriedman886/Challenge/issues"
+  },
+  "homepage": "https://github.com/afriedman886/Challenge#readme"
+}
