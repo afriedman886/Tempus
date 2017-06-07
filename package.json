@@ -19,7 +19,8 @@
   "homepage": "https://github.com/afriedman886/Challenge#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "mongodb": "^2.2.28"
+    "mongodb": "^2.2.28",
+    "mongoose": "^4.10.5"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

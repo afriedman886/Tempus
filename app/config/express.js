@@ -4,3 +4,4 @@ module.exports = function() {
     require('../routes/index.server.routes.js')(app);
     return app;
 };
+
