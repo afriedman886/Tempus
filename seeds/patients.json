@@ -1,5 +1,4 @@
-[{ "id": 1,
-   "username": "jsmith",
+[{ "username": "jsmith",
    "password": "password",
    "name": "Jane Smith",
    "age": 18,
@@ -8,8 +7,7 @@
    "phone": "3540294673"
  },
 
- { "id": 2,
-   "username": "ethompson",
+ { "username": "ethompson",
    "password": "password",
    "name": "Emma Thompson",
    "age": 58,
@@ -18,8 +16,7 @@
    "phone": "6574830574"
  },
 
- { "id": 3,
-   "username": "jstewart",
+ { "username": "jstewart",
    "password": "password",
    "name": "Jon Stewart",
    "age": 54,
@@ -28,8 +25,7 @@
    "phone": "6859364527"
  },
 
- { "id": 4,
-   "username": "tfey",
+ { "username": "tfey",
    "password": "password",
    "name": "Tina Fey",
    "age": 47,
@@ -38,8 +34,7 @@
    "phone": "6739564747"
  },
 
- { "id": 5,
-   "username": "scurry",
+ { "username": "scurry",
    "password": "password",
    "name": "Stephen Curry",
    "age": 29,
@@ -48,8 +43,7 @@
    "phone": "9273645691"
  },
 
- { "id": 6,
-   "username": "ielba",
+ { "username": "ielba",
    "password": "password",
    "name": "Idris Elba",
    "age": 44,
