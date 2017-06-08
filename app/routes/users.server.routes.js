@@ -11,13 +11,7 @@ module.exports = function(app) {
     app.route('/')
         .get(users.renderLogin)
         .post(passport.authenticate('local', {
-            successRedirect: {
-                if (user.patient) {
-                    return '/patients/:patientId'
-                } else {
-                    return '/patients'
-                };
-            },
+            successRedirect: '/patients',
             failureRedirect: '/',
             failureFlash: true
         }));
