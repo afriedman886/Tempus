@@ -8,6 +8,7 @@ var DoctorSchema = new Schema({
     },
     password: String,
     name: String,
+    patient: Boolean,
 });
 
 mongoose.model('Doctor', DoctorSchema);

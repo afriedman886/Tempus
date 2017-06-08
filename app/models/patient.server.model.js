@@ -9,14 +9,13 @@ var PatientSchema = new Schema({
       unique: true
     },
     password: String,
-    provider: String,
-    providerId: String,
     name: String,
     age: Number,
     email: String,
     address: String,
     phone: String,
     files: Array,
+    patient: Boolean,
 });
 
 PatientSchema.pre('save',

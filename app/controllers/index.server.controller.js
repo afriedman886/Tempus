@@ -1,7 +1,6 @@
 exports.render = function(req, res) {
-    res.send('Howdy World');
+    res.render('index', {
+        title: 'Tempus',
+        user: req.user ? req.user.username : ''
+    });
 };
-
-// app.get('/', function(req, res) {
-//     res.send('This is a GET request');
-// });

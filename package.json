@@ -4,8 +4,9 @@
   "description": "Doctor/patient portal",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,19 @@
   "homepage": "https://github.com/afriedman886/Challenge#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "express-session": "^1.15.3",
     "mongodb": "^2.2.28",
     "mongoose": "^4.10.5",
     "passport": "^0.3.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "react-scripts": "0.8.5"
   }
 }
