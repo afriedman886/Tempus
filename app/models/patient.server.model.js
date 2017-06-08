@@ -9,8 +9,6 @@ var PatientSchema = new Schema({
       unique: true
     },
     password: String,
-    provider: String,
-    providerId: String,
     name: String,
     age: Number,
     email: String,
