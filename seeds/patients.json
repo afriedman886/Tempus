@@ -1,8 +1,8 @@
-[{ "username": "jsmith",
+[{ "username": "patient",
    "password": "password",
-   "name": "Jane Smith",
+   "name": "Patient Smith",
    "age": 18,
-   "email": "jsmith@gmail.com",
+   "email": "psmith@gmail.com",
    "address": "2040 A St., Chicago, IL 60650",
    "phone": "3540294673"
  },
