@@ -2,6 +2,7 @@ var config = require('./config');
 var express = require('express');
 var bodyParser = require('body-parser');
 var passport = require('passport');
+var flash = require('connect-flash');
 
 
 module.exports = function() {
@@ -13,8 +14,9 @@ module.exports = function() {
     app.use(bodyParser.urlencoded({
         extended: true
     }));
-
     app.use(bodyParser.json());
+
+    app.use(flash());
 
     app.set('views', '../views');
     app.set('view engine', 'ejs');

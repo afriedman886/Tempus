@@ -17,6 +17,7 @@ var PatientSchema = new Schema({
     address: String,
     phone: String,
     files: Array,
+    patient: Boolean,
 });
 
 PatientSchema.pre('save',

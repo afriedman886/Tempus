@@ -4,7 +4,8 @@
    "age": 18,
    "email": "psmith@gmail.com",
    "address": "2040 A St., Chicago, IL 60650",
-   "phone": "3540294673"
+   "phone": "3540294673",
+   "patient": true
  },
 
  { "username": "ethompson",
@@ -13,7 +14,8 @@
    "age": 58,
    "email": "ethompson@gmail.com",
    "address": "123 B St., Beverly Hills, CA 90210",
-   "phone": "6574830574"
+   "phone": "6574830574",
+   "patient": true
  },
 
  { "username": "jstewart",
@@ -22,7 +24,8 @@
    "age": 54,
    "email": "jstewart@gmail.com",
    "address": "6345 C St., New York, NY 10013",
-   "phone": "6859364527"
+   "phone": "6859364527",
+   "patient": true
  },
 
  { "username": "tfey",
@@ -31,7 +34,8 @@
    "age": 47,
    "email": "tfey@gmail.com",
    "address": "54 D St., Boston, MA 02110",
-   "phone": "6739564747"
+   "phone": "6739564747",
+   "patient": true
  },
 
  { "username": "scurry",
@@ -40,7 +44,8 @@
    "age": 29,
    "email": "scurry@gmail.com",
    "address": "467 E St., San Francisco, CA 94016",
-   "phone": "9273645691"
+   "phone": "9273645691",
+   "patient": true
  },
 
  { "username": "ielba",
@@ -49,7 +54,8 @@
    "age": 44,
    "email": "ielba@gmail.com",
    "address": "92365 F St., Chicago, IL 60640",
-   "phone": "3127384957"
+   "phone": "3127384957",
+   "patient": true
  }]
 
 
