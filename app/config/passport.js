@@ -2,18 +2,18 @@ var passport = require('passport');
 var mongoose = require('mongoose');
 
 module.exports = function() {
-    var Patient = mongoose.model('Patient');
+    var User = mongoose.model('User');
 
-    passport.serializeUser(function(patient, done) {
-        done(null, patient.id);
+    passport.serializeUser(function(user, done) {
+        done(null, user.id);
     });
 
     passport.deserializeUser(function(id, done) {
-        Patient.findOne(
+        User.findOne(
             {_id: id},
             '-password',
-            function(err, patient) {
-                done(err, patient);
+            function(err, user) {
+                done(err, user);
             }
         );
     });

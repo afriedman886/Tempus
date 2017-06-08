@@ -4,17 +4,17 @@ var passport = require('passport')
 module.exports = function(app) {
     app.route('/patients').get(users.list);
 
-    app.route('/patients/:patientId').get(patients.read).put(patients.update).delete(patients.delete);
+    app.route('/patients/:patientId').get(users.read).put(users.update);
 
-    app.param('patientId', patients.patientByID);
+    app.param('patientId', users.userByID);
 
-    app.route('/login')
-        .get(patients.renderLogin)
+    app.route('/')
+        .get(users.renderLogin)
         .post(passport.authenticate('local', {
-            successRedirect: '/',
-            failureRedirect: '/login',
+            successRedirect: '/patients',
+            failureRedirect: '/',
             failureFlash: true
         }));
 
-    app.get('/logout', patients.logout);
+    app.get('/logout', users.logout);
 };

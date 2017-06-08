@@ -55,7 +55,7 @@ exports.read = function(req, res) {
     res.json(req.user);
 };
 
-exports.patientByID = function(req, res, next, id) {
+exports.userByID = function(req, res, next, id) {
     User.findOne({
             _id: id
         },

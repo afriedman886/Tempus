@@ -1,25 +1,25 @@
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var Patient = require('mongoose').model('Patient');
+var User = require('mongoose').model('User');
 
 module.exports = function() {
     passport.use(new LocalStrategy(function(username, password, done) {
-        Patient.findOne(
+        User.findOne(
             {username: username},
-            function(err, patient) {
+            function(err, user) {
                 if (err) {
                     return done(err);
                 }
 
-                if (!patient) {
+                if (!user) {
                     return done(null, false, {message: 'Username not found, please try again'});
                 }
 
-                if (!patient.authenticate(password)) {
+                if (!user.authenticate(password)) {
                     return done(null, false, {message: 'Invalid password'});
                 }
 
-                return done(null, patient);
+                return done(null, user);
             }
         );
     }));
