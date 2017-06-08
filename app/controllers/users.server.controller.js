@@ -1,4 +1,4 @@
-var Patient = require('mongoose').model('Patient');
+var User = require('mongoose').model('User');
 var passport = require('passport');
 
 var getErrorMessage = function(err) {
@@ -24,7 +24,7 @@ var getErrorMessage = function(err) {
 };
 
 exports.renderLogin = function(req, res, next) {
-    if (!req.patient) {
+    if (!req.user) {
         res.render('login', {
             title: 'Log-in Form',
             messages: req.flash('error') || req.flash('info')
@@ -41,30 +41,30 @@ exports.logout = function(req, res) {
 };
 
 exports.list = function(req, res, next) {
-    Patient.find({}, function(err, patients) {
+    User.find({"patient": true}, function(err, users) {
         if (err) {
             return next(err);
         }
         else {
-            res.json(patients);
+            res.json(users);
         }
     });
 };
 
 exports.read = function(req, res) {
-    res.json(req.patient);
+    res.json(req.user);
 };
 
 exports.patientByID = function(req, res, next, id) {
-    Patient.findOne({
+    User.findOne({
             _id: id
         },
-        function(err, patient) {
+        function(err, user) {
             if (err) {
                 return next(err);
             }
             else {
-                req.patient = patient;
+                req.user = user;
                 next();
             }
         }
@@ -72,38 +72,13 @@ exports.patientByID = function(req, res, next, id) {
 };
 
 exports.update = function(req, res, next) {
-    Patient.findByIdAndUpdate(req.patient.id, req.body, function(err, patient) {
+    User.findByIdAndUpdate(req.user.id, req.body, function(err, user) {
         if (err) {
             return next(err);
         }
         else {
-            res.json(patient);
+            res.json(user);
         }
     });
-};
-
-// the following create/delete functions are unnecessary for the current version of this app, but I included them to help me learn about Node/Express
-
-exports.create = function(req, res, next) {
-    var patient = new Patient(req.body);
-    patient.save(function(err) {
-        if (err) {
-            return next(err);
-        }
-        else {
-            res.json(patient);
-        }
-    });
-};
-
-exports.delete = function(req, res, next) {
-    req.patient.remove(function(err) {
-        if (err) {
-            return next(err);
-        }
-        else {
-            res.json(req.patient);
-        }
-    })
 };
 
