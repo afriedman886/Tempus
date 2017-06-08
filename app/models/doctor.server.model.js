@@ -7,6 +7,7 @@ var DoctorSchema = new Schema({
       unique: true
     },
     password: String,
+    name: String,
 });
 
 mongoose.model('Doctor', DoctorSchema);
