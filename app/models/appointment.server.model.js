@@ -5,8 +5,7 @@ var AppointmentSchema = new Schema({
     patientId: Number,
     doctorId: Number,
     subject: String,
-    date: Date,
-    time: Date,
+    dateTime: Date,
     notes: String,
 });
 
