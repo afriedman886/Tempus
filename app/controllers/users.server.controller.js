@@ -46,7 +46,10 @@ exports.list = function(req, res, next) {
             return next(err);
         }
         else {
-            res.json(users);
+            // res.json(users);
+            res.json(users).render('users/index', {
+                data: res.locals.returnValue
+            });
         }
     });
 };

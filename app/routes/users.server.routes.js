@@ -8,11 +8,11 @@ module.exports = function(app) {
 
     app.param('patientId', users.userByID);
 
-    app.route('/')
+    app.route('/login')
         .get(users.renderLogin)
         .post(passport.authenticate('local', {
             successRedirect: '/patients',
-            failureRedirect: '/',
+            failureRedirect: '/login',
             failureFlash: true
         }));
 

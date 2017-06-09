@@ -1,1 +1,21 @@
-user-index test
+var html = new EJS({url: 'cleaning.ejs'}).render(data);
+
+<% var users = {"_id": 2, "name": "Amy"}  %>
+
+<h1> Patients </h1>
+
+
+
+
+<ul>
+    <% for(var i=0; i<users.length; i++) { %>
+        <li>
+            <a href='/patients/<%= users[i]["_id"] %>'>
+                <%= users[i].name %>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+test
+
