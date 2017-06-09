@@ -1,13 +1,17 @@
-# Tempus Challenge
+# Tempus Patient Portal
 
-## About
-This app provides doctors and patients at Tempus with a simple portal with which to share patient information and to view/schedule appointments.
+This app provides doctors and patients at Tempus with a simple portal with which to share patient information and view/schedule appointments.
 
-## Instructions
-- clone this repo
-- install dependencies with ````npm install````
-- app will run at http://localhost:1337
+## Setup
+1. ``git clone https://github.com/afriedman886/Tempus.git``
+2. ``cd Tempus``
+3. ``npm install``
+4. ``node server.js``
 
-## Additional Features 
-With more time, this app would include:
+After cloning the git file, navigate to the project directory (Tempus). Once inside, run ``npm install`` to install all dependencies. Start the development server by running ``node server.js``.
+
+View the app at ``http://localhost:1337``
+
+## Notes
+
 
