@@ -25,7 +25,7 @@ module.exports = function() {
 
     app.use(flash());
 
-    app.set('views', '../views');
+    app.set('views', 'app/views');
     app.set('view engine', 'ejs');
 
     // require('../routes/index.server.routes.js')(app);

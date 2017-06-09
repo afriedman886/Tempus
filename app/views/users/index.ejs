@@ -1,0 +1,19 @@
+
+
+<h1> Patients </h1>
+
+
+
+
+<ul>
+    <% for(var i=0; i<patients.length; i++) { %>
+        <li>
+            <a href='/patients/<%= patients[i]["_id"] %>'>
+                <%= patients[i].name %>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+test
+
