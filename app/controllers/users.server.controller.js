@@ -31,7 +31,7 @@ exports.renderLogin = function(req, res, next) {
         });
     }
     else {
-        return res.redirect('/');
+        return res.redirect('/login');
     }
 };
 
@@ -46,10 +46,7 @@ exports.list = function(req, res, next) {
             return next(err);
         }
         else {
-
-            res.render('users/index', {
-                patients: res.json(users)
-            });
+            res.render('index');
         }
     });
 };
