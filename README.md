@@ -18,6 +18,6 @@ View the app at ``http://localhost:1337``
 While this app is not fully functional, the following url paths can be viewed manually:
 -  ``http://localhost:1337/patients`` : JSON object showing the collection of all patients
 -  ``http://localhost:1337/patients/:patientId`` : JSON object showing the patient details of the patient whose ``_id `` is specified in the file path
--  ``http://localhost:1337/login`` : Login screen, with styling, that unfortunately doesn't seem to be authorizing passwords properly.  To view the "invalid password" error message, feel free to try loggin in with ``username: patient`` and ``password: password``
+-  ``http://localhost:1337/login`` : Login screen, with styling, that unfortunately doesn't seem to be authorizing passwords properly.  Though if you'd like to view the "invalid password" error message, login can be attempted using the following: ``username: patient`` and ``password: password``
 
 
